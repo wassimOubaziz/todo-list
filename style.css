@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+
+.all {
+    margin-top: 100px;
+    background-color: white;
+    padding: 22px;
+    width: 360px;
+}
+
+header {
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.input-feild {
+    display: grid;
+    grid-template-columns: 10fr 1.3fr;
+    column-gap: 5px;
+}
+
+.input-feild input {
+    width: 100%;
+    padding: 2px 7px;
+    font-size: 14.5px;
+    border: solid 1px #9149e1;
+    border-radius: 3px;
+    outline: none;
+}
+
+.input-feild button {
+    width: 100%;
+    padding: 2.386px 0px;
+    font-size: 18px;
+    border: none;
+    background-color: #9149e1;
+    border-radius: 3px;
+    color: white;
+    cursor: auto;
+    opacity: 0.6;
+}
+
+.input-feild button.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.input-feild button.active:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+    background-color: #f3f2f3;
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    word-wrap: wrap;
+}
+
+ul li span {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    padding: 9.5px 12px;
+    background-color: #cb4236;
+    color: white;
+    top: 0;
+    right: -34px;
+    transition-property: right;
+    transition-duration: 0.25s;
+}
+
+ul li:hover span {
+    right: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+footer button {
+    padding: 5px;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #9149e1;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
